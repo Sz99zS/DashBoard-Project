@@ -209,3 +209,16 @@ template {
 [hidden] {
   display: none;
 }
+
+
+.Wrapper {
+  display: flex;
+
+}
+
+.Content {
+  height: 100vh;
+  overflow-y: scroll;
+  width: 100%;
+  padding-left: 24px;
+}

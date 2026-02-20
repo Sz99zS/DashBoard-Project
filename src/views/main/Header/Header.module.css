@@ -1,0 +1,64 @@
+.Header {
+    border-bottom: 1px solid #dce9fe;
+    padding: 12px 24px;
+    width: 1320px;
+    height: 84px;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.BellContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #dce9fe;
+    border-radius: 100px;
+    padding: 16px;
+    width: 28px;
+    height: 28px;
+    background: #fff;
+}
+
+.Bell {
+    width: 24px;
+}
+
+.Stripe {
+    border: 1px solid #dce9fe;
+    width: 0px;
+    height: 40px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.Profile {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dce9fe;
+    border-radius: 40px;
+    padding: 8px;
+    height: 44px;
+}
+
+.PersonalPhoto {
+    border-radius: 100px;
+    padding: 0px 0px 0px 0px;
+    width: 44px;
+    height: 44px;
+    object-fit: cover; /* КЛЮЧЕВОЕ: чтобы фото не искажалось */
+    display: block;
+}
+
+.Profile p {
+    padding-left: 8px;
+    padding-right: 4px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #191919;
+}

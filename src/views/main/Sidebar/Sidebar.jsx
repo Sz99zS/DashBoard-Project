@@ -20,7 +20,7 @@ const Sidebar = () => {
             </div>
 
             <div className={styles.FlexLogos2}>
-                <div class={styles.FooterLogos}>
+                <div className={styles.FooterLogos}>
                     <img className={styles.ImageFooter} src='/assets/Sidebar/cta.svg' alt='Headphones' />
                 </div>
             </div>
