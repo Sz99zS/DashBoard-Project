@@ -1,0 +1,17 @@
+.HeaderMain {
+    height: 34px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 120%;
+    color: #191919;
+
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.InfoBoxes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

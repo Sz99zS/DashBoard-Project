@@ -1,0 +1,41 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #dce9fe;
+    border-radius: 16px;
+    padding: 20px;
+    width: 1420px;
+    background: #f5f7fb;
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 13px;
+}
+
+.Header h2 {
+    margin: 0px;
+}
+
+.Title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #191919;
+}
+
+.Content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.Actions {
+    display: flex;
+    align-items: center;
+}

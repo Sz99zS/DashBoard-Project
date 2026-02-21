@@ -1,0 +1,62 @@
+.Cardinfo {
+    border-radius: 12px;
+    padding: 20px;
+    width: 418px;
+    box-shadow: 0 2px 5px 0 rgba(100, 100, 100, 0.1);
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.TopRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Icon {
+    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+    background: #f5f7fb;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.IconImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.value {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #191919;
+}
+
+.subValue {
+    margin: 0px 0px 0px 4px;
+    width: 55px;
+    height: 32px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #191919;
+}
+
+.Label {
+    margin: 20px 0px 0px 0px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #343434;
+}
