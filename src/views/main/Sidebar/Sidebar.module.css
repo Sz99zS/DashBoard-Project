@@ -2,9 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 110px; /*УБРАТЬ НАхрен после верстки основного контента*/
     height: 100vh;
-
+    width: 72px;
     border-right: 1px solid #dce9fe;
     padding: 0px 0px 24px;
     background: #f5f7fb;

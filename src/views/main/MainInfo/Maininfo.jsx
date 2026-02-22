@@ -2,10 +2,14 @@ import React from 'react'
 import styles from './Maininfo.module.css'
 import Cardinfo from '../Cardinfo/Cardinfo'
 import StatsSection from '../StatsSection/StatsSection'
+import AgentSelect from '../AgentSelect/AgentSelect'
 
 const Maininfo = () => {
+
+    const agentsList = ['Все агенты', 'Агент 1', 'Агент 2'];
+
     return (
-        <div>
+        <div className={styles.Main}>
             <div className={styles.HeaderMain}>
                 <p>Главная</p>
             </div>
@@ -13,7 +17,7 @@ const Maininfo = () => {
             <div className={styles.InfoBoxes}>
                 <StatsSection
                     title='Результативность чатов'
-                    action={<div style={{ color: '#6E41E2' }}>Все агенты</div>}
+                    action={<AgentSelect agents={agentsList} />}
                 >
                     <Cardinfo
                         title='Остаток сообщений'
