@@ -7,6 +7,7 @@
     border-right: 1px solid #dce9fe;
     padding: 0px 0px 24px;
     background: #f5f7fb;
+    transition: left 0.3s ease;
 }
 
 .FlexLogos1 {
@@ -38,11 +39,11 @@
     justify-content: center;
 }
 
-.ImageHeader{
+.ImageHeader {
     width: 40px;
 }
 
-.ImageHeader2{
+.ImageHeader2 {
     width: 24px;
     margin-top: 8px;
     margin-bottom: 4px;
@@ -55,4 +56,31 @@
 
 .ImageFooter {
     width: 51px;
+}
+
+@media (max-width: 768px) {
+    .Sidebar {
+        position: fixed;
+        top: 0;
+        left: -100px;
+        z-index: 10000;
+    }
+
+    .Sidebar.Active {
+        left: 0;
+    }
+
+    .Overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(25, 25, 25, 0.4);
+        z-index: 9999;
+    }
+
+    .ImageHeader {
+        width: 32px;
+    }
 }

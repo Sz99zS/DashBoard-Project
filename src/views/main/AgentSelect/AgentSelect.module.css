@@ -1,13 +1,9 @@
-.wrapper {
+.Wrapper {
     position: relative;
     font-family: var(--font-family), sans-serif;
-    border-radius: 8px;
-    padding: 8px 12px;
-    width: 200px;
-    background: #fff;
 }
 
-.mainButton {
+.MainButton {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,15 +12,23 @@
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 8px 12px;
+    width: 200px;
     user-select: none;
     transition: opacity 0.2s;
 }
 
-.mainButton:hover {
+.MainButton:hover {
     opacity: 0.8;
 }
 
-.dropdown {
+.MobileToggle {
+    display: none;
+}
+
+.Dropdown {
     position: absolute;
     top: calc(100% + 12px);
     right: 0;
@@ -37,14 +41,54 @@
     border: 1px solid #F0F2F5;
 }
 
-.header {
+@media (max-width: 768px) {
+    .MainButton {
+        display: none;
+    }
+
+    .MobileToggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, #6E41E2 0%, #5329BE 100%);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .MobileOverlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(25, 25, 25, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        padding: 16px;
+    }
+
+    .MobilePopup {
+        background: #fff;
+        width: 100%;
+        max-width: 343px;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.Header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.header span {
+.Header span {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 20px;
@@ -52,22 +96,19 @@
     color: #191919;
 }
 
-.close {
+.Close {
     background: none;
     border: none;
-    font-size: 24px;
-    color: #999;
     cursor: pointer;
-    line-height: 1;
     padding: 0;
 }
 
-.list {
+.List {
     display: flex;
     flex-direction: column;
 }
 
-.option {
+.Option {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,18 +117,13 @@
     color: #191919;
     cursor: pointer;
     border-bottom: 1px solid #F0F2F5;
-    transition: color 0.2s;
 }
 
-.option:last-child {
+.Option:last-child {
     border-bottom: none;
 }
 
-.option:hover {
-    color: #6E41E2;
-}
-
-.selectedPreview {
+.SelectedPreview {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -100,23 +136,21 @@
     cursor: pointer;
 }
 
-.check {
+.Check {
     color: #6E41E2;
     font-weight: bold;
 }
 
-.arrow {
+.Arrow {
     display: flex;
 }
 
 .ArrowIcon {
-    align-items: center;
     width: 20px;
     height: 20px;
-    transition: transform 0.3s;
 }
 
-.footer {
+.Footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -125,27 +159,22 @@
 .btnApply {
     width: 100%;
     padding: 14px;
-    background: linear-gradient(90deg, #6E41E2 0%, #5329BE 100%);
+    background: linear-gradient(180deg, #5573e9 0%, #5c10c2 100%);
     color: #FFFFFF;
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: transform 0.1s;
-}
-
-.btnApply:active {
-    transform: scale(0.98);
 }
 
 .btnDisabled {
     width: 100%;
     padding: 14px;
-    background: #B3B3B3;
+    background: #a3a3a3;
     color: #FFFFFF;
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
     font-size: 16px;
     font-weight: 600;
     cursor: not-allowed;
@@ -156,13 +185,9 @@
     padding: 14px;
     background: #FFFFFF;
     color: #6E41E2;
-    border: 1px solid #6E41E2;
-    border-radius: 10px;
+    border: 1px solid #5931cf;
+    border-radius: 12px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-}
-
-.btnReset:hover {
-    background: #F5F7FB;
 }
